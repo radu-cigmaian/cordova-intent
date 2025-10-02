@@ -1,0 +1,14 @@
+{
+  "name": "cordova-intet",
+  "version": "1.0.0",
+  "description": "Cordova plugin pentru deschiderea unui URL cu Intent",
+  "main": "www/OpenUrl.js",
+  "keywords": [
+    "cordova",
+    "intent",
+    "openurl",
+    "plugin"
+  ],
+  "author": "Radu Cigmaian",
+  "license": "MIT"
+}

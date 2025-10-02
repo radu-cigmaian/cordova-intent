@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-intet" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>OpenUrlPlugin</name>
+    <description>Un plugin Cordova pentru deschiderea unui URL cu startActivity</description>
+    <license>MIT</license>
+    <keywords>cordova, intent, openurl</keywords>
+    <engines>
+        <engine name="cordova" version=">=10.0.0"/>
+    </engines>
+
+    <!-- wrapper JS -->
+    <js-module src="www/OpenUrl.js" name="OpenUrl">
+        <clobbers target="OpenUrl"/>
+    </js-module>
+
+    <!-- partea critică pentru Android -->
+    <platform name="android">
+        <source-file src="src/android/OpenUrlPlugin.java" target-dir="src/com/example/openurl"/>
+        <config-file target="config.xml" parent="/*">
+            <feature name="OpenUrlPlugin">
+                <param name="android-package" value="com.example.openurl.OpenUrlPlugin"/>
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
