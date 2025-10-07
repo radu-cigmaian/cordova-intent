@@ -1,5 +1,5 @@
 {
-  "name": "cordova-intet",
+  "name": "cordova-intent",
   "version": "1.0.0",
   "description": "Cordova plugin pentru deschiderea unui URL cu Intent",
   "main": "www/OpenUrl.js",
